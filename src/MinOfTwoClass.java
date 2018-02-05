@@ -14,6 +14,12 @@ public class MinOfTwoClass
         log = Logger.getLogger(String.valueOf(getClass()));
     }
 
+    /**
+     * Метод определяет минимальное из двух чисел
+     * @param a
+     * @param b
+     * @return минимальное из двух
+     */
     public long minOfTwo(long a, long b) {
         try
         {
