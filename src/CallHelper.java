@@ -32,6 +32,11 @@ public void caller ()
     int res4 = arrPosNegCall.arrPosNeg(arr4);
     System.out.println(res4);
 
+    /* 5. Дан массив чисел. Выяснить, отсортирован ли он по возрастанию.*/
+    int [] arr5 = {10, 20, 25, 30, 35, 40, 45, 100, 200};
+    ArrIsSortClass arrIsSortCall = new ArrIsSortClass();
+    arrIsSortCall.arrIsSort(arr5);
+
 }
 
 }
