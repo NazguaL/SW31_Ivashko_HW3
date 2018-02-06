@@ -41,6 +41,11 @@ public class ArrPosNegClassTest
         int res44 = arrPosNegCall.arrPosNeg(arr44);
         Assert.assertEquals(0, res44);
 
+        log.trace("Positive scenario, no elements, method returns not 1");
+        int [] arr45 = {0, 0, 0};
+        int res45 = arrPosNegCall.arrPosNeg(arr45);
+        Assert.assertNotEquals(1, res45);
+
     }
 
 }
