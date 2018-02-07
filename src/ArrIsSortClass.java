@@ -10,6 +10,8 @@ public class ArrIsSortClass
     public ArrIsSortClass ()
     {
         log = Logger.getLogger(String.valueOf(getClass()));
+        log.trace("");
+        log.trace("5. Дан массив чисел. Выяснить, отсортирован ли он по возрастанию.");
     }
 
     public boolean arrIsSort(int [] a)

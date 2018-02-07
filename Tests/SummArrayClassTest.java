@@ -19,8 +19,8 @@ public class SummArrayClassTest
     @Test
     public void summArray() throws Exception
     {
-        log.trace("K = 7, answer is 77.");
         SummArrayClass summArrayCall = new SummArrayClass();
+        log.trace("Positive scenario, K = 7, method returns 77.");
         int [] arr2 = {27, 15, 37, 33, 42, 35};
         int k = 7;
         Assert.assertEquals(77, summArrayCall.summArray(arr2, k));

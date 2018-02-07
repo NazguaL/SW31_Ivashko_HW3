@@ -20,6 +20,7 @@ public class ArrEvenClassTest
     public void arrEven() throws Exception
     {
         ArrEvenClass arrEvenCall = new ArrEvenClass();
+
         log.trace("Positive scenario, method returns array with 2 numbers");
         int [] arr61 = {11, 20, 30};
         int [] mas61 = arrEvenCall.arrEven(arr61);

@@ -11,6 +11,8 @@ public class SummArrayClass
     public SummArrayClass()
     {
         log = Logger.getLogger(String.valueOf(getClass()));
+        log.trace("");
+        log.trace("2. Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.");
     }
 
     /**
@@ -29,10 +31,7 @@ public class SummArrayClass
                 for (int i = 0; i < a.length; i++) {
                     if ((a[i]) % k == 0)
                     {
-                        log.trace("(a[i]) % k = " + ((a[i]) % k));
-                        log.trace("i = " + (i));
                         result = result + a[i];
-                        log.trace("result = " + (result));
                     }
                 }
 

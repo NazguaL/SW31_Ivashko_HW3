@@ -11,6 +11,8 @@ public class ArrPosNegClass
     public ArrPosNegClass ()
     {
         log = Logger.getLogger(String.valueOf(getClass()));
+        log.trace("");
+        log.trace("4. Дан целочисленный массив чисел (положительных и отрицательных). Выяснить, какое число встречается раньше – положительное или отрицательное.");
     }
 
     public int arrPosNeg(int [] a)
@@ -39,7 +41,7 @@ public class ArrPosNegClass
         else if (flag == -1) {System.out.println("Negative");}
         else {System.out.println("Array containts no elements or only zero elements");}
          **/
-        log.trace("Return is: " + flag);
+        log.trace("Method returns : " + flag);
         return flag;
     }
 

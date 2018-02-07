@@ -51,7 +51,7 @@ public void caller ()
 
     /* 7. Дан массив чисел. Заменить все его элементы, большие данного числа Z, этим числом. Подсчитать количество замен.*/
     int z = 90;
-    int [] h = {10, 20, 25, 30, 35, 40, 45, 100, 200};
+    int [] h = {};
     ArrReplaceZClass arrReplaceZCall = new ArrReplaceZClass();
     int [][] j = arrReplaceZCall.arrReplaceZ(h, z);
     //int [][] j = {{10, 20, 25, 30, 35, 40, 45, 100, 200},{2}};
@@ -63,6 +63,16 @@ public void caller ()
     System.out.println();
     System.out.println("Total count of replacements: " + (j)[1][0]);
 
+
+    /* 8. Дан массив чисел. Подсчитать, сколько в нем отрицательных, положительных и нулевых элементов.*/
+    System.out.println();
+    int [] n = {-10, 0, 25, 30, 35, 40, 45, 100, 200};
+    ArrPosZerNegClass arrPosZerNegCall = new ArrPosZerNegClass();
+    int [] o = arrPosZerNegCall.arrPosZerNeg(n);
+    System.out.println("There are negative numbers count in the array: " + o[0]);
+    System.out.println("There are zero numbers count in the array: " + o[1]);
+    System.out.println("There are positive numbers count in the array: " + o[2]);
+    System.out.println();
 
 
 }

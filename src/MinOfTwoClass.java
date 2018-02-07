@@ -12,6 +12,8 @@ public class MinOfTwoClass
     public MinOfTwoClass ()
     {
         log = Logger.getLogger(String.valueOf(getClass()));
+        log.trace("");
+        log.trace("1. Дано два числа. Найти минимальное число из них.");
     }
 
     /**

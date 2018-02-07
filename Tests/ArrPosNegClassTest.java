@@ -20,9 +20,9 @@ public class ArrPosNegClassTest
     @Test
     public void arrPosNeg() throws Exception
     {
+        ArrPosNegClass arrPosNegCall = new ArrPosNegClass();
         log.trace("Positive scenario, first element is positive, method returns 1");
         int [] arr41 = {0, 0, 15, 30, 30, 40, 30, 0};
-        ArrPosNegClass arrPosNegCall = new ArrPosNegClass();
         int res41 = arrPosNegCall.arrPosNeg(arr41);
         Assert.assertEquals(1, res41);
 

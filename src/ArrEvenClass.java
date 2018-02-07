@@ -12,6 +12,8 @@ public class ArrEvenClass
     public ArrEvenClass ()
     {
         log = Logger.getLogger(String.valueOf(getClass()));
+        log.trace("");
+        log.trace("6. Дан массив чисел. Создать массив из четных чисел этого массива. Если таких чисел нет, то вывести сообщение об этом факте.");
     }
 
     public int [] arrEven (int [] a)

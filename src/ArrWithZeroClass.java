@@ -10,6 +10,8 @@ public class ArrWithZeroClass
     public ArrWithZeroClass ()
     {
         log = Logger.getLogger(String.valueOf(getClass()));
+        log.trace("");
+        log.trace("3. В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.");
     }
 
     public int [] arrWithZero(int[] a)
