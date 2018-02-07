@@ -75,7 +75,7 @@ public void caller ()
     System.out.println();
 
     /*9. Дан массив чисел. Поменять местами наибольший и наименьший элементы.*/
-    /*int [] m9 = {3000, -1000, 25, 30, 35, 400, 45, 100, -8000};
+    int [] m9 = {3000, -1000, 25, 30, 35, 400, 45, 100, -8000};
     ArrMinMaxRotateClass arrMinMaxRotateCall = new ArrMinMaxRotateClass();
     int [] a9 = arrMinMaxRotateCall.arrMinMaxRotate(m9);
     System.out.println("There are following numbers in the new array:");
@@ -85,14 +85,14 @@ public void caller ()
     }
     System.out.println();
     System.out.println();
-    */
-    int [] m9 = {};
-    ArrMinMaxRotateClass arrMinMaxRotateCall = new ArrMinMaxRotateClass();
-    int [] a9 = arrMinMaxRotateCall.arrMinMaxRotate(m9);
-    System.out.println("There are following numbers in the new array:");
-    int l9 = a9.length;
-    for (int m = 0 ; m <l9 ; m++) {
-        System.out.print((a9[m]) + " ");
+
+    /*12. Дан массив чисел. Поменять местами соседние элементы (а[0] и а[1], а[2] и а[3].*/
+    int [] arr12 = {1, 3, 2, 5, 3, 4, 7};
+    ArrRevert2Class arrRevert2Call = new ArrRevert2Class();
+    int [] mas12 = arrRevert2Call.arrRevert2(arr12);
+    int l12 = mas12.length;
+    for (int m = 0 ; m <l12 ; m++) {
+        System.out.print((mas12[m]) + " ");
     }
     System.out.println();
     System.out.println();
