@@ -37,7 +37,6 @@ public class ArrMinMaxRotateClassTest
         int [] mas93 = arrMinMaxRotateCall.arrMinMaxRotate(arr93);
         int [] ans93 = {-1};
         Assert.assertArrayEquals(ans93, mas93);
-
     }
 
 }

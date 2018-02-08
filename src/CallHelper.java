@@ -132,7 +132,6 @@ public void caller ()
 
     /*17. Дан массив чисел с положительными и отрицательными элементы. Вычислить произведение отрицательных элементов P1 и произведение положительных элементов Р2.
     Сравнить модуль Р 2  с модулем Р 1  и указать, какое из произведений по модулю больше.*/
-
     int [] arr17 = {-30, 10, -25, 30, -35, 40, -45, 10, -80, 7, -10};
     ArrP1P2Class arrP1P2Call = new  ArrP1P2Class();
     long [] a17 = arrP1P2Call.arrP1P2(arr17);
@@ -140,6 +139,30 @@ public void caller ()
     System.out.println("P2 is equals to: " + a17[2]);
     if (a17[0] == 0) {System.out.println("Module of P1 is higher than module of P2");}
     else {System.out.println("Module of P2 is higher than module of P1");}
+    System.out.println();
+
+    /* 18. Дан массив чисел. Среди них есть равные. Найти первый максимальный элемент массива и заменить его нулем.*/
+    int [] arr18 = {3000, 1000, 25, 30, 35, 400, 45, 100, 8000, 7, 8000};
+    ArrReplaceMax2ZeroClass arrReplaceMax2ZeroCall = new  ArrReplaceMax2ZeroClass();
+    int [] a18 = arrReplaceMax2ZeroCall.arrReplaceMax2Zero(arr18);
+    System.out.println("There are following numbers in the new array:");
+    int l18 = a18.length;
+    for (int m = 0 ; m <l18 ; m++) {
+        System.out.print((a18[m]) + " ");
+    }
+    System.out.println();
+    System.out.println();
+
+    /*19. Дан массив чисел. Образовать новый массив, элементами которого будут элементы исходного, оканчивающиеся на цифру k.:*/
+
+    int[] arr19 = {3001, 1002, 25, 33, 35, 404, 45, 106, 8007, 7, 8008};
+    NewArrBasedOnKClass newArrBasedOnKCall = new NewArrBasedOnKClass();
+    int k19 = 5;
+    int[] a19 = newArrBasedOnKCall.newArrBasedOnK(arr19, k19);
+    int l19 = a19.length;
+    for (int m = 0; m < l19; m++) {
+        System.out.print((a19[m]) + " ");
+    }
     System.out.println();
 
 
