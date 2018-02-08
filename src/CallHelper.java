@@ -96,6 +96,53 @@ public void caller ()
     }
     System.out.println();
     System.out.println();
+
+
+    System.out.println("14. Дан массив чисел. Найти  mаx(а[0], а[2], ..., а[2к]) + min(а[1], а[3], …, а[2к-1]).:");
+    int [] arr14 = {-100, 3000, -1000, 25, 30, 35, 400, 45, 100, -8000, 7, 10000};
+    ArrMinMaxClass arrMinMaxCall = new  ArrMinMaxClass();
+    int [] mas14 = arrMinMaxCall.arrMinMax(arr14);
+    System.out.println("mаx(а[0], а[2], ..., а[2к]): " + mas14[0]);
+    System.out.println("min(а[1], а[3], …, а[2к-1]): " + mas14[1]);
+    System.out.println();
+
+    /*15. Дан массив целых положительных чисел. Найти произведение только тех чисел, которые больше заданного числа М. Если таких нет, то выдать сообщение об этом.*/
+    System.out.println("15. Дан массив целых положительных чисел. Найти произведение только тех чисел, которые больше заданного числа М. Если таких нет, то выдать сообщение об этом.:");
+    int [] arr15 = {3000, 1000, 25, 30, 35, 400, 45, 100, 8000, 7, 10000};
+    int m15 = 5000;
+    ArrIntProductClass arrIntProductCall = new ArrIntProductClass();
+    long a15 = arrIntProductCall.arrIntProduct(arr15,m15);
+    if (a15 == 0) {System.out.println("There are no numbers more than "+ m15 + " in the array.");}
+    else {System.out.println("Production of numbers more than " + m15 +  " is: " + a15);}
+    System.out.println();
+
+    /* 16. Дан массив положительных и отрицательных чисел.  Заменить нулями те числа, величина которых по модулю больше максимального числа.*/
+    System.out.println("16. Дан массив положительных и отрицательных чисел.  Заменить нулями те числа, величина которых по модулю больше максимального числа.:");
+    //int [] arr16 = {3000, 1000, 25, 30, 35, 400, 45, 100, -8000, 7, -10000};
+    int [] arr16 = {};
+    ArrABSMaxToZeroClass arrABSMaxToZeroCall = new  ArrABSMaxToZeroClass();
+    int [] a16 = arrABSMaxToZeroCall.arrABSMaxToZero(arr16);
+    int l16 = a16.length;
+    System.out.println("There are following numbers in the new array:");
+    for (int m = 0 ; m <l16 ; m++) {
+        System.out.print((a16[m]) + " ");
+    }
+    System.out.println();
+    System.out.println();
+
+    /*17. Дан массив чисел с положительными и отрицательными элементы. Вычислить произведение отрицательных элементов P1 и произведение положительных элементов Р2.
+    Сравнить модуль Р 2  с модулем Р 1  и указать, какое из произведений по модулю больше.*/
+
+    int [] arr17 = {-30, 10, -25, 30, -35, 40, -45, 10, -80, 7, -10};
+    ArrP1P2Class arrP1P2Call = new  ArrP1P2Class();
+    long [] a17 = arrP1P2Call.arrP1P2(arr17);
+    System.out.println("P1 is equals to: " + a17[1]);
+    System.out.println("P2 is equals to: " + a17[2]);
+    if (a17[0] == 0) {System.out.println("Module of P1 is higher than module of P2");}
+    else {System.out.println("Module of P2 is higher than module of P1");}
+    System.out.println();
+
+
 }
 
 }
