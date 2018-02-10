@@ -46,6 +46,8 @@ public class ArrPosNegClassTest
         int res45 = arrPosNegCall.arrPosNeg(arr45);
         Assert.assertNotEquals(1, res45);
 
+        
+        /*New comment*/
     }
 
 }
